@@ -14,3 +14,4 @@ namespace OdeToFood.Core
         public CuisineType Cuisine { get; set; }
     }
 }
+
