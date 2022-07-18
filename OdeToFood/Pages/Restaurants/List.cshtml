@@ -10,7 +10,7 @@
         <div class="input-group">
             <input type="search" class="form-control" 
             asp-for ="SearchTerm"/>
-            <span>
+            <span class="input-group-btn">
                 <button class="btn btn-secondary">
                     <i class="bi bi-search"></i>
                 </button>
@@ -48,11 +48,9 @@
 {
     <partial name="_Summary" model="restaurant"/>
 }
-
-
 <a asp-page="./Edit" class="btn btn-primary">Add New</a>
 
-@*move appsettings message to footer which section define in _Layout*@
-@section footer{
+@*move appsettings message to footer, invoked in _Layout*@
+@section appsettingfooter{
     @Model.Message
 }
