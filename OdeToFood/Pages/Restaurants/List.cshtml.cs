@@ -22,6 +22,11 @@ namespace OdeToFood.Pages.Restaurants
         {
             Message = config["Message"];
             Restaurants = restaurantData.GetRestaurantsByName(SearchTerm);
+            //if (Restaurants == null)
+            //{
+            //    RedirectToPage("./NotFound");
+            //}
+            //return Page();
         }
     }
 }
